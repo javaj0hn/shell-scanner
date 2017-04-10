@@ -2,9 +2,17 @@
 #Website Malware Audit
 
 #Download database
-echo "Downloading database..."
-wget -q -O "${HOME}/ShellDatabase" https://raw.githubusercontent.com/javaj0hn/shell-scanner/master/ShellDatabase
-touch "${HOME}/ShellDatabase"
+if [ "$(stat -c%Y "${HOME}/ShellDatabase")" -lt "$(date +%s --date='12 hours ago')" ]; then
+    latestDB=1
+elif [ ! -s "${HOME}/ShellDatabase" ]; then
+    latestDB=1
+fi
+if [ "${latestDB}" -eq 1 ]
+then
+	echo "Downloading database..."
+	wget -q -O "${HOME}/ShellDatabase" https://raw.githubusercontent.com/javaj0hn/shell-scanner/master/ShellDatabase
+	touch "${HOME}/ShellDatabase"
+fi
 
 #Begin scanning for shells/injections
 echo "\nScanning for malicious shells & injections..."
